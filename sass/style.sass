@@ -1,0 +1,208 @@
+@import 'reset.sass'
+@import 'frameless.sass'
+
+//Colors
+
+$white: #fff
+$yellow: #FFCC00
+$lt_gray: #E7E8E7
+$md_gray: #999999
+$mdrk_gray: #666666
+$drk_gray: #333
+$hvy_gray: #111
+
+//Typograpy
+
+@font-face 
+  font-family: Aliquam
+  src: url('fonts/aliquam/Aliquam.ttf')
+@mixin aliquam
+  font-family: Aliquam
+@font-face 
+  font-family: CabinCondensed-Regular
+  src: url('fonts/cabin-condensed/CabinCondensed-Regular.ttf')
+@mixin cabinreg
+  font-family: CabinCondensed-Regular
+
+//General
+
+body
+  @include cabinreg
+  background: $hvy_gray
+  color: $md_gray
+  font-weight: normal
+  font-size: 16px
+  a
+    text-decoration: none
+    color: $yellow
+    &:hover
+      color: $lt_gray
+.button
+  display: inline-block
+  background: url(images/button_arrow.png) 96% center no-repeat $drk_gray
+  padding: 20px
+  padding-right: 55px
+  border-radius: 15em
+  color: $lt_gray
+  font-size: 24px
+  text-transform: uppercase
+  text-shadow: 0 1px 0 rgba(0,0,0,1)
+h1,h2,h3,h4,h5,h6
+  @include aliquam
+  font-size: 40px
+  color: $lt_gray
+  margin: 0 0 20px 0
+  font-weight: normal
+p
+  margin: 0 0 20px 0
+  line-height: 1.35em
+ul, ol
+  margin: 0 0 20px 10px
+  padding: 0 0 0 10px
+  li
+    margin: 0 0 10px 0
+ul
+  list-style: disc outside
+ol
+  list-style: decimal outside
+.wrapper
+  position: relative
+  margin: 0 auto
+  padding: 20px 0
+  width: $cols16
+
+//Header
+
+#about
+  background: url(images/use_your_illusion.png)
+  border-top: 5px solid $yellow
+  header
+    padding: 20px
+    padding-top: 0
+    white-space: nowrap
+    hgroup
+      width: $cols6
+      h1,h2
+        position: absolute
+        text-indent: -9999em
+    nav
+      @include aliquam
+      font-size: 24px
+      #access
+        position: fixed
+        z-index: 9
+        right: 10%
+        top: 20px
+        background: $hvy_gray
+        margin: 0
+        list-style: none
+        padding: 
+          top: 25px
+          bottom: 27px
+          left: 35px
+          right: 35px
+        overflow: hidden
+        border-radius: 15em
+        li
+          display: inline-block
+          margin: 0
+        a
+          color: $lt_gray
+          padding: 20px
+          &:hover
+            border:
+              bottom: 5px solid $yellow
+            margin-bottom: -5px
+    #graphic, #text
+      width: $cols8
+      vertical-align: middle
+      white-space: normal
+      display: inline-block
+      box-sizing: border-box
+    #graphic
+      text-align: center
+    h3
+      font-size: 62px
+
+//Content
+#portfolio
+  #carousel_wrap
+    position: relative
+    width: 100%
+  //Carousel
+  #carousel
+    margin: 0
+    padding: 0
+    white-space: nowrap
+    position: relative
+    li
+      display: inline-block
+      img
+        background: $md_gray
+        padding: 10px
+      .active
+        background: #fff
+      article
+        display: none
+        height: 100%
+        white-space: normal
+        bottom: -40px
+        width: $cols4
+        position: absolute
+        left: $cols2
+  input[type='button'].disabled
+    display: none
+  input[type='button'].next, input[type='button'].previous
+    position: absolute
+    top: 35%
+    text-indent: -9999em
+    width: 100px
+    height: 100px 
+    border: none
+    z-index: 9
+  input[type='button'].next
+    background: url(images/arrow_right.png) center center no-repeat
+    right: 0
+    border-radius: 5px 0 0 5px
+  input[type='button'].previous
+    background: url(images/arrow_left.png) center center no-repeat
+    left: 0
+    border-radius: 0 5px 5px 0
+#services
+  background: $drk_gray
+.contact-info, .content
+  display: inline-block
+  vertical-align: top
+  box-sizing: border-box
+.contact-info
+  margin-left: $cols2
+  width: $cols3
+.content
+  width: $cols7
+  padding-left: 20px
+#accordion
+  h4
+    font-size: 22px
+    background: $hvy_gray
+    padding: 10px 15px
+    color: $md_gray
+    border-radius: 15em
+    &:hover
+      cursor: pointer
+    img
+      transition: all .2s linear
+      margin-right: 10px
+    &.open img
+      transform: rotate(90deg)
+    &.open + article
+      display: block
+  article
+    display: none
+    padding-left: 20px
+
+//Footer
+
+footer
+  text-align: center
+
+//Break Points

@@ -197,6 +197,8 @@ body {
   font-size: 24px;
   text-transform: uppercase;
   text-shadow: 0 1px 0 black; }
+  .button:hover {
+    color: #999999; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Aliquam;
@@ -278,7 +280,9 @@ ol {
 
 #portfolio #carousel_wrap {
   position: relative;
-  width: 100%; }
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%; }
 #portfolio #carousel {
   margin: 0;
   padding: 0;
@@ -295,7 +299,7 @@ ol {
       display: none;
       height: 100%;
       white-space: normal;
-      bottom: -40px;
+      top: 100%;
       width: 20em;
       position: absolute;
       left: 10em; }
@@ -303,7 +307,7 @@ ol {
   display: none; }
 #portfolio input[type='button'].next, #portfolio input[type='button'].previous {
   position: absolute;
-  top: 35%;
+  top: 100px;
   text-indent: -9999em;
   width: 100px;
   height: 100px;

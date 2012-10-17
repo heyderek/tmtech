@@ -3,16 +3,17 @@ $(document).ready(function() {
   $('#accordion h4').click(function(){
     var showArticle = $(this).next('article'), 
     hideArticle = $('#accordion article');
+    
     if (! $(this).hasClass('open')) {
+      $('#accordion h4').removeClass('open');
       $(this).addClass('open');
       hideArticle.hide();
       showArticle.slideDown('fast');
    } else {
       $('#accordion h4').removeClass('open');
-      showArticle.slideUp('fast');
    }
   });
- //Scrollto functionality for navigation
+//Scrollto functionality for navigation
  $('a#home').bind('click', function(){
    $.scrollTo('#about',{'duration':'slow'});
    return false;

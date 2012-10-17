@@ -6,10 +6,10 @@ $(document).ready(function() {
     if (! $(this).hasClass('open')) {
       $(this).addClass('open');
       hideArticle.hide();
-      showArticle.slideDown('slow');
+      showArticle.slideDown('fast');
    } else {
-      $(this).removeClass('open');
-      showArticle.slideUp();
+      $('#accordion h4').removeClass('open');
+      showArticle.slideUp('fast');
    }
   });
  //Scrollto functionality for navigation

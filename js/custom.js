@@ -36,20 +36,19 @@ $(document).ready(function() {
   //Activate Carousel
  $('#carousel_wrap').carousel({ dispItems: 4 });
  
-/*
- $('#carousel img').click(function(){
-    var showArticle = $(this).next('article'), 
-    hideArticle = $('#carousel article');
-    findArticle = $(this).shift();
-    if (! $(this).hasClass('active')) {
-      $('#carousel img').removeClass('active');
-      $(this).addClass('active');
-      hideArticle.hide();
-      showArticle.slideDown('slow');
-   } else {
-      $(this).removeClass('active');
-      showArticle.slideUp();
-   }
-  });
-*/
+  $('#carousel img').click(function(){
+   var showArticle = $(this).next('article'), 
+   hideArticle = $('#carousel article'),
+   removeArticle = $('#carousel li').children('article').remove().appendTo('#info');
+   if (! $(this).hasClass('active')) {
+     $('#carousel img').removeClass('active');
+     $(this).addClass('active');
+     hideArticle.hide();
+     removeArticle.slideDown('fast');
+
+  } else {
+     $(this).removeClass('active');
+     showArticle.slideUp();
+  }
+ });
 });

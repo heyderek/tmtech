@@ -303,6 +303,8 @@ ol {
       width: 20em;
       position: absolute;
       left: 10em; }
+#portfolio #info article {
+  display: none; }
 #portfolio input[type='button'].disabled {
   display: none; }
 #portfolio input[type='button'].next, #portfolio input[type='button'].previous {

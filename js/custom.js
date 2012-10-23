@@ -35,20 +35,24 @@ $(document).ready(function() {
  })
   //Activate Carousel
  $('#carousel_wrap').carousel({ dispItems: 4 });
- 
-  $('#carousel img').click(function(){
-   var showArticle = $(this).next('article'), 
+ $('#carousel img').click(function(){
+    var showArticle = $(this).next('article'), 
    hideArticle = $('#carousel article'),
-   removeArticle = $('#carousel li').children('article').remove().appendTo('#info');
+   removeArticle = $(this).parent().children('article').addClass('active').remove().appendTo('#info');
+
+   
    if (! $(this).hasClass('active')) {
      $('#carousel img').removeClass('active');
+     $('#info article').removeClass('active');
      $(this).addClass('active');
      hideArticle.hide();
      removeArticle.slideDown('fast');
 
   } else {
      $(this).removeClass('active');
+     $('#info article').removeClass('active');
      showArticle.slideUp();
   }
+
  });
-});
+ });

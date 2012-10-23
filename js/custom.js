@@ -38,7 +38,7 @@ $(document).ready(function() {
  
  $(function (){
    var firstArticle = $('#carousel li:first-child article').html(),
-       article = $('#info').html(firstArticle);
+       article = $('#portfolio_info').html(firstArticle);
   });
 
  $('#carousel img').click(function(){
@@ -47,9 +47,9 @@ $(document).ready(function() {
         
         if (articleText){
         console.log('yes');
-          $('#info').html(articleText);
+          $('#portfolio_info').html(articleText);
         } else {
-          $('#info').html('');
+          $('#portfolio_info').html('');
         }
     
     if ($(this).hasClass('active')){

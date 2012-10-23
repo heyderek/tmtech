@@ -145,11 +145,11 @@ textarea {
   overflow: auto; }
 
 ::selection {
-  background: #25b4aa;
+  background: #ffcb13;
   color: white; }
 
 ::-moz-selection {
-  background: #25b4aa;
+  background: #ffcb13;
   color: white; }
 
 img::selection {
@@ -159,7 +159,7 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: rgba(255, 0, 0, 0.62); }
+  -webkit-tap-highlight-color: rgba(255, 203, 19, 0.9); }
 
 @media screen and (max-width: 1px) {
   body {
@@ -222,6 +222,12 @@ ul {
 
 ol {
   list-style: decimal outside; }
+
+strong {
+  font-weight: bold; }
+
+em {
+  font-style: italic; }
 
 .wrapper {
   position: relative;
@@ -296,16 +302,20 @@ ol {
       #portfolio #carousel li img {
         background: #999999;
         padding: 10px; }
+        #portfolio #carousel li img:hover {
+          cursor: pointer; }
       #portfolio #carousel li .active {
-        background: white; }
+        background: url(images/active_arrow.png) center bottom no-repeat white; }
       #portfolio #carousel li article {
         display: none;
         height: 100%;
+        position: relative;
         white-space: normal;
         top: 100%;
-        width: 20em;
-        position: absolute;
+        width: 45em;
         left: 10em; }
+      #portfolio #carousel li aside {
+        display: none; }
   #portfolio input[type='button'].disabled {
     display: none; }
   #portfolio input[type='button'].next, #portfolio input[type='button'].previous {
@@ -324,6 +334,19 @@ ol {
     background: url(images/arrow_left.png) center center no-repeat;
     left: 0;
     border-radius: 0 5px 5px 0; }
+  #portfolio #portfolio_info {
+    width: 45em;
+    margin-left: 25em; }
+    #portfolio #portfolio_info .portfolio-content, #portfolio #portfolio_info .project-specs {
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: top; }
+    #portfolio #portfolio_info .portfolio-content {
+      width: 30em;
+      padding-left: 20px; }
+    #portfolio #portfolio_info aside.project-specs {
+      width: 15em;
+      margin-left: -45em; }
 
 #services {
   background: #333333; }

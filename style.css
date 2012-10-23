@@ -278,49 +278,52 @@ ol {
     #about header h3 {
       font-size: 62px; }
 
-#portfolio #carousel_wrap {
-  position: relative;
-  width: 100%;
-  overflow-x: hidden;
-  height: 20em; }
-#portfolio #carousel {
-  margin: 0;
-  padding: 0;
-  white-space: nowrap;
-  position: relative; }
-  #portfolio #carousel li {
-    display: inline-block; }
-    #portfolio #carousel li img {
-      background: #999999;
-      padding: 10px; }
-    #portfolio #carousel li .active {
-      background: white; }
-    #portfolio #carousel li article {
-      display: none;
-      height: 100%;
-      white-space: normal;
-      top: 100%;
-      width: 20em;
-      position: absolute;
-      left: 10em; }
-#portfolio input[type='button'].disabled {
-  display: none; }
-#portfolio input[type='button'].next, #portfolio input[type='button'].previous {
-  position: absolute;
-  top: 100px;
-  text-indent: -9999em;
-  width: 100px;
-  height: 100px;
-  border: none;
-  z-index: 9; }
-#portfolio input[type='button'].next {
-  background: url(images/arrow_right.png) center center no-repeat;
-  right: 0;
-  border-radius: 5px 0 0 5px; }
-#portfolio input[type='button'].previous {
-  background: url(images/arrow_left.png) center center no-repeat;
-  left: 0;
-  border-radius: 0 5px 5px 0; }
+#portfolio {
+  padding: 0 0 40px; }
+  #portfolio #carousel_wrap {
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    height: 20em;
+    padding: 20px 0; }
+  #portfolio #carousel {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    position: relative; }
+    #portfolio #carousel li {
+      display: inline-block; }
+      #portfolio #carousel li img {
+        background: #999999;
+        padding: 10px; }
+      #portfolio #carousel li .active {
+        background: white; }
+      #portfolio #carousel li article {
+        display: none;
+        height: 100%;
+        white-space: normal;
+        top: 100%;
+        width: 20em;
+        position: absolute;
+        left: 10em; }
+  #portfolio input[type='button'].disabled {
+    display: none; }
+  #portfolio input[type='button'].next, #portfolio input[type='button'].previous {
+    position: absolute;
+    top: 100px;
+    text-indent: -9999em;
+    width: 100px;
+    height: 100px;
+    border: none;
+    z-index: 9; }
+  #portfolio input[type='button'].next {
+    background: url(images/arrow_right.png) center center no-repeat;
+    right: 0;
+    border-radius: 5px 0 0 5px; }
+  #portfolio input[type='button'].previous {
+    background: url(images/arrow_left.png) center center no-repeat;
+    left: 0;
+    border-radius: 0 5px 5px 0; }
 
 #services {
   background: #333333; }

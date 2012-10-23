@@ -71,6 +71,11 @@ strong
   font-weight: bold
 em
   font-style: italic
+input[type="submit"]
+  border: none
+  background: $mdrk_gray
+  padding: 10px 20px
+  font-size: 16px
 input[type="text"]
   background: $mdrk_gray
   border: none
@@ -194,7 +199,7 @@ textarea
     display: none
   input[type='button'].next, input[type='button'].previous
     position: absolute
-    top: 100px
+    top: 125px
     text-indent: -9999em
     width: 100px
     height: 100px 
@@ -268,5 +273,10 @@ textarea
 
 footer
   text-align: center
+  margin: ($gutter *2) 0
 
 //Break Points
+
+//960 break
+@media screen and (min-width: 0px) and (max-width: 959px)
+  

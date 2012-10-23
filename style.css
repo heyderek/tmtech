@@ -229,6 +229,12 @@ strong {
 em {
   font-style: italic; }
 
+input[type="submit"] {
+  border: none;
+  background: #666666;
+  padding: 10px 20px;
+  font-size: 16px; }
+
 input[type="text"] {
   background: #666666;
   border: none;
@@ -348,7 +354,7 @@ textarea {
     display: none; }
   #portfolio input[type='button'].next, #portfolio input[type='button'].previous {
     position: absolute;
-    top: 100px;
+    top: 125px;
     text-indent: -9999em;
     width: 100px;
     height: 100px;
@@ -420,4 +426,5 @@ textarea {
   padding-left: 20px; }
 
 footer {
-  text-align: center; }
+  text-align: center;
+  margin: 40px 0; }

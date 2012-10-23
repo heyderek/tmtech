@@ -71,6 +71,30 @@ strong
   font-weight: bold
 em
   font-style: italic
+input[type="text"]
+  background: $mdrk_gray
+  border: none
+  border-radius: 15em
+  padding: 10px
+  font-family: inherit
+  color: $hvy_gray
+  width: 30em
+  display: block
+  margin-bottom: $gutter
+  &:focus
+    background: $md_gray
+textarea
+  background: $mdrk_gray
+  border: none
+  width: 30em
+  color: $hvy_gray
+  font-family: inherit
+  border-radius: 8px
+  padding: 10px
+  display: block
+  margin-bottom: $gutter
+  &:focus
+    background: $md_gray
 .wrapper
   position: relative
   margin: 0 auto
@@ -229,6 +253,16 @@ em
   article
     display: none
     padding-left: 20px
+
+#contact
+  .contact-info, .contact-form
+    display: inline-block
+    vertical-align: top
+    box-sizing: border-box
+  .contact-form
+    width: $cols10
+    padding-left: 20px
+  .contact-info
 
 //Footer
 

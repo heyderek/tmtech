@@ -229,6 +229,32 @@ strong {
 em {
   font-style: italic; }
 
+input[type="text"] {
+  background: #666666;
+  border: none;
+  border-radius: 15em;
+  padding: 10px;
+  font-family: inherit;
+  color: #111111;
+  width: 30em;
+  display: block;
+  margin-bottom: 20px; }
+  input[type="text"]:focus {
+    background: #999999; }
+
+textarea {
+  background: #666666;
+  border: none;
+  width: 30em;
+  color: #111111;
+  font-family: inherit;
+  border-radius: 8px;
+  padding: 10px;
+  display: block;
+  margin-bottom: 20px; }
+  textarea:focus {
+    background: #999999; }
+
 .wrapper {
   position: relative;
   margin: 0 auto;
@@ -383,6 +409,14 @@ em {
     display: block; }
 #accordion article {
   display: none;
+  padding-left: 20px; }
+
+#contact .contact-info, #contact .contact-form {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box; }
+#contact .contact-form {
+  width: 50em;
   padding-left: 20px; }
 
 footer {

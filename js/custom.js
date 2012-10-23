@@ -35,11 +35,11 @@ $(document).ready(function() {
  })
   //Activate Carousel
  $('#carousel_wrap').carousel({ dispItems: 4 });
+/*
  $('#carousel img').click(function(){
     var showArticle = $(this).next('article'), 
    hideArticle = $('#carousel article'),
    removeArticle = $(this).parent().children('article').addClass('active').remove().appendTo('#info');
-
    
    if (! $(this).hasClass('active')) {
      $('#carousel img').removeClass('active');
@@ -53,6 +53,6 @@ $(document).ready(function() {
      $('#info article').removeClass('active');
      showArticle.slideUp();
   }
-
  });
+*/
  });

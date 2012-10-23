@@ -36,17 +36,20 @@ $(document).ready(function() {
   //Activate Carousel
  $('#carousel_wrap').carousel({ dispItems: 4 });
  
+/*
  $('#carousel img').click(function(){
-    var showArticle = $(this).next('article'), 
-    hideArticle = $('#carousel article');
+    var showArticle = $(this).next('article'), 
+    hideArticle = $('#carousel article');
+    findArticle = $(this).shift();
     if (! $(this).hasClass('active')) {
       $('#carousel img').removeClass('active');
-      $(this).addClass('active');
-      hideArticle.hide();
-      showArticle.slideDown('slow');
+      $(this).addClass('active');
+      hideArticle.hide();
+      showArticle.slideDown('slow');
    } else {
       $(this).removeClass('active');
       showArticle.slideUp();
    }
   });
+*/
 });

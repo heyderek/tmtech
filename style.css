@@ -291,41 +291,44 @@ textarea {
     #about header nav {
       font-family: aliquamultralight, "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 24px; }
-      #about header nav #access {
-        position: fixed;
-        z-index: 9;
-        right: 10%;
-        top: 20px;
-        background: #333333;
-        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
-        border: 1px solid #e7e8e7;
-        margin: 0;
-        list-style: none;
-        padding-top: 25px;
-        padding-bottom: 27px;
-        padding-left: 35px;
-        padding-right: 35px;
-        overflow: hidden;
-        border-radius: 15em; }
-        #about header nav #access li {
-          display: inline-block;
-          margin: 0; }
-        #about header nav #access a {
-          color: #e7e8e7;
-          padding: 20px; }
-          #about header nav #access a:hover {
-            border-bottom: 5px solid #ffcc00;
-            margin-bottom: -5px; }
-    #about header #graphic, #about header #text {
-      width: 40em;
-      vertical-align: middle;
-      white-space: normal;
+  #about #access {
+    position: fixed;
+    z-index: 9;
+    right: 10%;
+    top: 20px;
+    background: #333333;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #e7e8e7;
+    margin: 0;
+    list-style: none;
+    padding-top: 25px;
+    padding-bottom: 27px;
+    padding-left: 35px;
+    padding-right: 35px;
+    overflow: hidden;
+    border-radius: 15em; }
+    #about #access li {
       display: inline-block;
-      box-sizing: border-box; }
-    #about header #graphic {
-      text-align: center; }
-    #about header h3 {
-      font-size: 62px; }
+      margin: 0; }
+    #about #access a {
+      color: #e7e8e7;
+      padding: 20px; }
+      #about #access a:hover {
+        border-bottom: 5px solid #ffcc00;
+        margin-bottom: -5px; }
+  #about #graphic, #about #text {
+    width: 40em;
+    vertical-align: middle;
+    white-space: normal;
+    display: inline-block;
+    box-sizing: border-box; }
+  #about #graphic {
+    text-align: center; }
+    #about #graphic img {
+      max-width: 100%;
+      height: auto; }
+  #about h3 {
+    font-size: 62px; }
 
 #portfolio {
   padding: 0 0 40px;
@@ -437,6 +440,31 @@ textarea {
   width: 50em;
   padding-left: 20px; }
 
+.contact-info h1, .contact-info h2, .contact-info h3, .contact-info h4, .contact-info h5, .contact-info h6, .project-specs h1, .project-specs h2, .project-specs h3, .project-specs h4, .project-specs h5, .project-specs h6 {
+  font-size: 32px; }
+
 footer {
   text-align: center;
   margin: 40px 0; }
+
+@media screen and (min-width: 0px) and (max-width: 1219px) {
+  .wrapper {
+    width: 60em; }
+
+  #about #access {
+    right: 0; }
+  #about #graphic {
+    width: 30em; }
+  #about #text {
+    width: 25em; }
+    #about #text h3 {
+      font-size: 42px; }
+
+  #portfolio #portfolio_info {
+    margin-left: 15em; }
+
+  #contact .contact-form {
+    width: 40em; }
+
+  .contact-info {
+    margin-left: 0; } }

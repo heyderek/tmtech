@@ -109,6 +109,9 @@ textarea
     background: $md_gray
 #captcha
   margin-bottom: $gutter
+  img
+    width: 100%
+    height: auto
 .wrapper
   position: relative
   margin: 0 auto
@@ -352,11 +355,11 @@ footer
     width: 100%
 
 @media screen and (min-width: 0px) and (max-width: 539px)
-
   .wrapper
     width: $cols4
   #about
     header
+      padding: 0 0 $gutter
       hgroup
         width: 100%
         img
@@ -365,6 +368,8 @@ footer
     #access
       position: relative
       top: 0
+      width: 100%
+      padding: 0
       right: 0
       margin-top: $gutter
       border-radius: 15px
@@ -374,11 +379,14 @@ footer
         a
           display: block
     #graphic,#text
-      width: $cols4
+      width: 100%
       display: block
       text-align: center
       h3
         font-size: 42px
+  section
+    width: 100%
+    padding: 0
   #services
     .content
       width: 100%

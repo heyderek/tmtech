@@ -269,6 +269,9 @@ textarea {
 
 #captcha {
   margin-bottom: 20px; }
+  #captcha img {
+    width: 100%;
+    height: auto; }
 
 .wrapper {
   position: relative;
@@ -506,14 +509,18 @@ footer {
   .wrapper {
     width: 20em; }
 
-  #about header hgroup {
-    width: 100%; }
-    #about header hgroup img {
-      width: 100%;
-      height: auto; }
+  #about header {
+    padding: 0 0 20px; }
+    #about header hgroup {
+      width: 100%; }
+      #about header hgroup img {
+        width: 100%;
+        height: auto; }
   #about #access {
     position: relative;
     top: 0;
+    width: 100%;
+    padding: 0;
     right: 0;
     margin-top: 20px;
     border-radius: 15px;
@@ -523,11 +530,15 @@ footer {
       #about #access li a {
         display: block; }
   #about #graphic, #about #text {
-    width: 20em;
+    width: 100%;
     display: block;
     text-align: center; }
     #about #graphic h3, #about #text h3 {
       font-size: 42px; }
+
+  section {
+    width: 100%;
+    padding: 0; }
 
   #services .content {
     width: 100%;

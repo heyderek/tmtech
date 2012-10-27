@@ -128,7 +128,9 @@ textarea
         z-index: 9
         right: 10%
         top: 20px
-        background: $hvy_gray
+        background: $drk_gray
+        box-shadow: 1px 1px 4px rgba(0,0,0,.25)
+        border: 1px solid $lt_gray
         margin: 0
         list-style: none
         padding: 
@@ -163,7 +165,7 @@ textarea
 #portfolio
   padding: 0 0 40px
   background: -webkit-linear-gradient(top , #111111 0%, #666666 302px, #111111 45px)
-  background: linear-gradient(top bottom, #111111 0%, #666666 399px, #111111 45px)
+  background: linear-gradient(to bottom, #111111 0%, #666666 399px, #111111 45px)
   #carousel_wrap
     position: relative
     width: 100%
@@ -185,7 +187,7 @@ textarea
         &:hover
           cursor: pointer
       .active
-        background: url(images/active_arrow.png) center bottom no-repeat #fff
+        background: url(images/active_arrow.png) center bottom no-repeat $yellow
       article
         display: none
         height: 100%

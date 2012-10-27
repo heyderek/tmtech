@@ -270,7 +270,7 @@ textarea {
 #captcha {
   margin-bottom: 20px; }
   #captcha img {
-    width: 100%;
+    max-width: 100%;
     height: auto; }
 
 .wrapper {

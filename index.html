@@ -1,7 +1,7 @@
 <html>
 <meta charset="utf-8">
   <head>
-  <script src="js/html5.js" charset="utf-8"></script>
+  <!--[if lt IE 9]><script src="js/html5.js" charset="utf-8"></script><![endif]-->
   <script src="js/jquery.js" charset="utf-8"></script>
   <script src="js/prefixfree.min.js" charset="utf-8"></script>
   <script src="js/scrollto.js" charset="utf-8"></script>
@@ -22,8 +22,8 @@
         <nav>
           <ul id="access">
             <li><a id="home" href="#about">About</a></li>
-            <li><a id="work" href="#portfolio">Portfolio</a></li>
             <li><a id="skills" href="#services">Services</a></li>
+            <li><a id="work" href="#portfolio">Portfolio</a></li>
             <li><a id="email" href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -37,7 +37,47 @@
         </div><!-- /#text -->
       </header><!-- /header.wrapper -->
     </section><!-- /#header -->
-    <section id="portfolio" name="portfolio">
+    <section id="services" name="services">
+      <div class="wrapper">
+        <h3>Services</h3>
+        <aside class="contact-info">
+          <h4>Contact</h4>
+          <p>e: <a href="mailto:support@tmtechnologies.us">tmtechnologies.us</a><br>p: <a href="#">(702) 800-0560</a></p>
+          <h4>Questions?</h4>
+          <p>Curios to see what TM Technologies can do for you?  <a href="#">Hit us up!</a>  We&rsquo;d love to hear from you!</p>
+        </aside><!-- /.contact-info -->
+        <div class="content">
+        <div id="accordion">
+          <h4 class="open"><img src="images/arrow.png" />Small Business Support and Maintenance</h4>
+          <article>
+            <h5>Some stuff</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </article>
+          <h4><img src="images/arrow.png" />Website Design and Software Development</h4>
+          <article>
+            <h5>Some stuff</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </article>
+          <h4><img src="images/arrow.png" />System Design, Configuration and Installation</h4>
+          <article>
+            <h5>Some stuff</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </article>
+          <h4><img src="images/arrow.png" />Infrastructure Design, Configuration and Implementation</h4>
+          <article>
+            <h5>Some stuff</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </article>
+          <h4><img src="images/arrow.png" />VoIP Design and Management</h4>
+          <article>
+            <h5>Some stuff</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </article>
+        </div><!-- /#accordion -->
+        </div><!-- /.content -->
+      </div><!-- /.wrapper -->
+    </section><!-- /#services -->
+        <section id="portfolio" name="portfolio">
       <div class="wrapper">
         <h3>Portfolio</h3>
         <div id="carousel_wrap">
@@ -176,47 +216,7 @@
       </div><!-- /#carousel_wrap -->
       <div id="portfolio_info"></div>
       </div><!-- /.wrapper -->
-    </section><!-- /#work -->
-    <section id="services" name="services">
-      <div class="wrapper">
-        <h3>Services</h3>
-        <aside class="contact-info">
-          <h4>Contact</h4>
-          <p>e: <a href="mailto:support@tmtechnologies.us">tmtechnologies.us</a><br>p: <a href="#">(702) 800-0560</a></p>
-          <h4>Questions?</h4>
-          <p>Curios to see what TM Technologies can do for you?  <a href="#">Hit us up!</a>  We&rsquo;d love to hear from you!</p>
-        </aside><!-- /.contact-info -->
-        <div class="content">
-        <div id="accordion">
-          <h4 class="open"><img src="images/arrow.png" />Small Business Support and Maintenance</h4>
-          <article>
-            <h5>Some stuff</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </article>
-          <h4><img src="images/arrow.png" />Website Design and Software Development</h4>
-          <article>
-            <h5>Some stuff</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </article>
-          <h4><img src="images/arrow.png" />System Design, Configuration and Installation</h4>
-          <article>
-            <h5>Some stuff</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </article>
-          <h4><img src="images/arrow.png" />Infrastructure Design, Configuration and Implementation</h4>
-          <article>
-            <h5>Some stuff</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </article>
-          <h4><img src="images/arrow.png" />VoIP Design and Management</h4>
-          <article>
-            <h5>Some stuff</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </article>
-        </div><!-- /#accordion -->
-        </div><!-- /.content -->
-      </div><!-- /.wrapper -->
-    </section><!-- /#services -->
+    </section><!-- /#portfolio -->
     <section id="contact" name="contact">
       <div class="wrapper">
         <h3>Contact</h3>
@@ -228,8 +228,12 @@
         </aside><!-- /.contact-info -->
         <div class="contact-form">
           <form>
-            <input type="text">
-            <textarea cols="40" rows="5"></textarea>
+            <input type="text" value="Your Name">
+            <input type="text" value="Your Email">
+            <textarea cols="40" rows="5" value="Your Message"></textarea>
+            <div id="captcha">
+              <img src="images/captcha_sample.png" />
+            </div><!-- #captcha -->
             <input type="submit" class="button" value="submit">
           </form>
         </div><!-- /.contact-form -->

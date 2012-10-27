@@ -34,7 +34,7 @@ $(document).ready(function() {
    return false;
  })
   //Activate Carousel
- $('#carousel_wrap').carousel({ dispItems: 4 });
+ $('#carousel_wrap').carousel({ dispItems: 1 });
  
  $(function (){
    var firstArticle = $('#carousel li:first-child article').html(),

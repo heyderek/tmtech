@@ -295,7 +295,7 @@ footer
 
 //Break Points
 
-@media screen and (min-width: 0px) and (max-width: 1219px)
+@media screen and (min-width: 960px) and (max-width: 1219px)
   .wrapper
     width: $cols12
   #about
@@ -316,3 +316,96 @@ footer
       width: $cols8
   .contact-info
     margin-left: 0
+
+@media screen and (min-width: 540px) and (max-width: 959px)
+  .wrapper
+    width: $cols8
+  #about
+    #access
+      position: relative
+      top: 0
+      right: 0
+      margin-top: $gutter
+    #graphic,#text
+      width: $cols8
+      display: block
+      text-align: center
+      h3
+        font-size: 42px
+  #services
+    .contact-info
+      display: none
+  #portfolio
+    #portfolio_info
+      margin-left: 0
+      width: 100%
+      .portfolio-content
+        padding-left: 0
+        width: 100%
+      aside.project-specs
+        margin-left: 0 
+  #contact
+    .contact-form
+      width: $cols8
+  .contact-info
+    margin-left: 0
+    width: 100%
+
+@media screen and (min-width: 0px) and (max-width: 539px)
+
+  .wrapper
+    width: $cols4
+  #about
+    header
+      hgroup
+        width: 100%
+        img
+          width: 100%
+          height: auto
+    #access
+      position: relative
+      top: 0
+      right: 0
+      margin-top: $gutter
+      border-radius: 15px
+      text-align: center
+      li
+        display: block
+        a
+          display: block
+    #graphic,#text
+      width: $cols4
+      display: block
+      text-align: center
+      h3
+        font-size: 42px
+  #services
+    .content
+      width: 100%
+      padding: 0
+    .contact-info
+      display: none
+  #portfolio
+    #portfolio_info
+      margin-left: 0
+      width: 100%
+      .portfolio-content
+        padding-left: 0
+        width: 100%
+      aside.project-specs
+        margin-left: 0 
+  #contact
+    .contact-form
+      width: $cols4
+      padding: 0
+      input
+        width: 100%
+      textarea
+        width: 100%
+  .contact-info
+    margin-left: 0
+    width: 100%
+  footer
+    p
+      width: $cols4
+      margin: 0 auto

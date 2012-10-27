@@ -447,7 +447,7 @@ footer {
   text-align: center;
   margin: 40px 0; }
 
-@media screen and (min-width: 0px) and (max-width: 1219px) {
+@media screen and (min-width: 960px) and (max-width: 1219px) {
   .wrapper {
     width: 60em; }
 
@@ -468,3 +468,94 @@ footer {
 
   .contact-info {
     margin-left: 0; } }
+@media screen and (min-width: 540px) and (max-width: 959px) {
+  .wrapper {
+    width: 40em; }
+
+  #about #access {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-top: 20px; }
+  #about #graphic, #about #text {
+    width: 40em;
+    display: block;
+    text-align: center; }
+    #about #graphic h3, #about #text h3 {
+      font-size: 42px; }
+
+  #services .contact-info {
+    display: none; }
+
+  #portfolio #portfolio_info {
+    margin-left: 0;
+    width: 100%; }
+    #portfolio #portfolio_info .portfolio-content {
+      padding-left: 0;
+      width: 100%; }
+    #portfolio #portfolio_info aside.project-specs {
+      margin-left: 0; }
+
+  #contact .contact-form {
+    width: 40em; }
+
+  .contact-info {
+    margin-left: 0;
+    width: 100%; } }
+@media screen and (min-width: 0px) and (max-width: 539px) {
+  .wrapper {
+    width: 20em; }
+
+  #about header hgroup {
+    width: 100%; }
+    #about header hgroup img {
+      width: 100%;
+      height: auto; }
+  #about #access {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    border-radius: 15px;
+    text-align: center; }
+    #about #access li {
+      display: block; }
+      #about #access li a {
+        display: block; }
+  #about #graphic, #about #text {
+    width: 20em;
+    display: block;
+    text-align: center; }
+    #about #graphic h3, #about #text h3 {
+      font-size: 42px; }
+
+  #services .content {
+    width: 100%;
+    padding: 0; }
+  #services .contact-info {
+    display: none; }
+
+  #portfolio #portfolio_info {
+    margin-left: 0;
+    width: 100%; }
+    #portfolio #portfolio_info .portfolio-content {
+      padding-left: 0;
+      width: 100%; }
+    #portfolio #portfolio_info aside.project-specs {
+      margin-left: 0; }
+
+  #contact .contact-form {
+    width: 20em;
+    padding: 0; }
+    #contact .contact-form input {
+      width: 100%; }
+    #contact .contact-form textarea {
+      width: 100%; }
+
+  .contact-info {
+    margin-left: 0;
+    width: 100%; }
+
+  footer p {
+    width: 20em;
+    margin: 0 auto; } }

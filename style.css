@@ -507,7 +507,8 @@ footer {
     width: 100%; } }
 @media screen and (min-width: 0px) and (max-width: 539px) {
   .wrapper {
-    width: 20em; }
+    width: 20em;
+    padding: 0; }
 
   #about header {
     padding: 0 0 20px; }
@@ -559,9 +560,9 @@ footer {
     width: 20em;
     padding: 0; }
     #contact .contact-form input {
-      width: 100%; }
+      width: 60%; }
     #contact .contact-form textarea {
-      width: 100%; }
+      width: 60%; }
 
   .contact-info {
     margin-left: 0;

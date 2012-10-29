@@ -34,7 +34,7 @@ $(document).ready(function() {
    return false;
  })
   //Activate Carousel
- $('#carousel_wrap').carousel({ dispItems: 1 });
+ $('#carousel_wrap').carousel({ dispItems: 2 });
  
  $(function (){
    var firstArticle = $('#carousel li:first-child article').html(),
@@ -46,7 +46,6 @@ $(document).ready(function() {
         articleText = article.html();
         
         if (articleText){
-        console.log('yes');
           $('#portfolio_info').html(articleText);
         } else {
           $('#portfolio_info').html('');

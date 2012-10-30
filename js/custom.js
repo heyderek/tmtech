@@ -33,15 +33,20 @@ $(document).ready(function() {
    $.scrollTo('#contact',{'duration':'slow'});
    return false;
  })
-  //Activate Carousel
- $('#carousel_wrap').carousel({ dispItems: 2 });
- 
+  //Activate Flexslider Carousel
+    $('.flexslider').flexslider({
+      animation: "slide",
+      animationLoop: false,
+      itemWidth: 300,
+      itemMargin: 20
+    });
+
  $(function (){
-   var firstArticle = $('#carousel li:first-child article').html(),
+   var firstArticle = $('.flexslider li:first-child article').html(),
        article = $('#portfolio_info').html(firstArticle);
   });
 
- $('#carousel img').click(function(){
+ $('.flexslider img').click(function(){
     var article = $(this).next('article'),
         articleText = article.html();
         
@@ -52,9 +57,9 @@ $(document).ready(function() {
         }
     
     if ($(this).hasClass('active')){
-      $('#carousel img').removeClass('active');
+      $('.flexslider img').removeClass('active');
     } else {
-      $('#carousel img').removeClass('active');
+      $('.flexslider img').removeClass('active');
       $(this).addClass('active');
     }
  });

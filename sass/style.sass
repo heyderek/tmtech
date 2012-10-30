@@ -1,5 +1,6 @@
 @import 'reset.sass'
 @import 'frameless.sass'
+@import 'flexslider.sass'
 
 //Colors
 
@@ -179,40 +180,35 @@ textarea
 //Content
 #portfolio
   padding: 0 0 40px
-  background: -webkit-linear-gradient(top , #111111 0%, #666666 302px, #111111 45px)
-  background: linear-gradient(to bottom, #111111 0%, #666666 399px, #111111 45px)
-  #carousel_wrap
-    position: relative
-    width: 100%
-    overflow-x: hidden
-    height: 20em
-    padding: 20px 0
-  //Carousel
-  #carousel
+  background: -webkit-linear-gradient(top , #111111 0%, #666666 379px, #111111 45px)
+  background: linear-gradient(to bottom, #111111 0%, #666666 379px, #111111 45px)
+  .flexslider
+    box-shadow: none
     margin: 0
-    padding: 0
-    white-space: nowrap
-    position: relative
-    li
-      display: inline-block
-      img
-        background: $md_gray
-        padding: 10px
-        box-shadow: 2px -2px 5px rgba(0,0,0,.75)
-        &:hover
-          cursor: pointer
-      .active
-        background: url(images/active_arrow.png) center bottom no-repeat $yellow
-      article
-        display: none
-        height: 100%
-        position: relative
-        white-space: normal
-        top: 100%
-        width: $cols9
-        left: $cols2
-      aside
-        display: none
+    ul
+      margin: 0
+      li
+        margin-bottom: 0
+    ol.flex-control-nav
+      display: none
+    img
+      background: $md_gray
+      padding: 10px
+      box-shadow: 2px -2px 5px rgba(0,0,0,.75)
+      &:hover
+        cursor: pointer
+    .active
+      background: url(images/active_arrow.png) center bottom no-repeat $yellow
+    article
+      display: none
+      height: 100%
+      position: relative
+      white-space: normal
+      top: 100%
+      width: $cols9
+      left: $cols2
+    aside
+      display: none
   input[type='button'].disabled
     display: none
   input[type='button'].next, input[type='button'].previous
@@ -233,6 +229,7 @@ textarea
     border-radius: 0 5px 5px 0
   #portfolio_info
     width: $cols9
+    margin-top: $gutter*2
     margin-left: $cols5
     .portfolio-content, .project-specs
       box-sizing: border-box
@@ -278,6 +275,7 @@ textarea
     padding-left: 20px
 
 #contact
+  background: $drk_gray
   .contact-info, .contact-form
     display: inline-block
     vertical-align: top

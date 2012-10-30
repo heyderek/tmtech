@@ -542,9 +542,9 @@ textarea {
       left: 10em; }
     #portfolio .flexslider aside {
       display: none; }
-  #portfolio input[type='button'].disabled {
+  #portfolio .flex-disabled {
     display: none; }
-  #portfolio input[type='button'].next, #portfolio input[type='button'].previous {
+  #portfolio .flex-direction-nav a {
     position: absolute;
     top: 125px;
     text-indent: -9999em;
@@ -552,11 +552,11 @@ textarea {
     height: 100px;
     border: none;
     z-index: 9; }
-  #portfolio input[type='button'].next {
+  #portfolio .flex-next {
     background: url(images/arrow_right.png) center center no-repeat;
     right: 0;
     border-radius: 5px 0 0 5px; }
-  #portfolio input[type='button'].previous {
+  #portfolio .flex-prev {
     background: url(images/arrow_left.png) center center no-repeat;
     left: 0;
     border-radius: 0 5px 5px 0; }
@@ -685,7 +685,7 @@ footer {
 @media screen and (min-width: 0px) and (max-width: 539px) {
   .wrapper {
     width: 20em;
-    padding: 0; }
+    padding: 20px 0; }
 
   #about header {
     padding: 0 0 20px; }

@@ -37,6 +37,7 @@ $(document).ready(function() {
     $('.flexslider').flexslider({
       animation: "slide",
       animationLoop: false,
+      slideShow: false,
       itemWidth: 300,
       itemMargin: 20
     });
